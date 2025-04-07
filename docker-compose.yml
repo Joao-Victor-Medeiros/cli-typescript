@@ -1,0 +1,15 @@
+services:
+  backend:
+    container_name: inventario-app
+    build:
+      dockerfile: Dockerfile
+  database:
+    image: "postgres:latest"
+    container_name: inventario-db
+    restart: always
+    environment:
+        POSTGRES_USER: admin
+        POSTGRES_PASSWORD: admin
+        POSTGRES_DB: inventario-db
+    ports:
+      - "5432:5432"

@@ -10,7 +10,7 @@ export const client = new Client({
     port: 5432,
     user: "admin",
     password: "admin",
-    database: "project_2"
+    database: "inventario-db"
 });
 
 
