@@ -1,8 +1,5 @@
 import 'reflect-metadata';
-import { DataSource } from 'typeorm';
 import "reflect-metadata";
-import { Categoria } from '../entity/Categoria'
-import { Produto } from '../entity/Produto'
 import {Client} from "pg";
 
 export const client = new Client({
